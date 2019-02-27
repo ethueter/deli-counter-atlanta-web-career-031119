@@ -17,11 +17,11 @@ end
 def take_a_number(katz_deli, name)
   next_in_line = []
   if katz_deli.length < 1 
-    next_in_line.push(name)
+    katz_deli.push(name)
     puts "Welcome, #{name}. You are number 1 in line."
   else
-    new_position = next_in_line.length.to_i + 1 
-    next_in_line.push(name)
+    new_position = katz_deli.length.to_i + 1 
+    katz_deli.push(name)
     puts "Welcome, #{name}. You are number #{new_position} in line."
   end 
 end 
