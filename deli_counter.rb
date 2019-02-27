@@ -15,8 +15,8 @@ def line(katz_deli)
 end 
 
 def take_a_number(katz_deli, name)
+  next_in_line = []
   if katz_deli.length < 1 
-    next_in_line = []
     next_in_line.push(name)
     puts "Welcome, #{name}. You are number 1 in line."
   else
